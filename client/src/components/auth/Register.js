@@ -89,7 +89,7 @@ const Register = () => {
             onChange={onChange}
           />
         </div>
-        <input type='submit' value='Register' className='btn btn-primary' />
+        <input type='submit' className='btn btn-primary' value='Register' />
       </form>
       <p className='my-1'>
         Already have an account? <a href='login.html'>Sign In</a>
