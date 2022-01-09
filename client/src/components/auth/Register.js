@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-
 import axios from 'axios';
 
 const Register = () => {
@@ -77,7 +76,6 @@ const Register = () => {
             type='password'
             placeholder='Password'
             name='password'
-            minLength='6'
             value={password}
             onChange={onChange}
           />
@@ -87,12 +85,11 @@ const Register = () => {
             type='password'
             placeholder='Confirm Password'
             name='password2'
-            minLength='6'
             value={password2}
             onChange={onChange}
           />
         </div>
-        <input type='Submit' value='Register' className='btn btn-primary' />
+        <input type='submit' value='Register' className='btn btn-primary' />
       </form>
       <p className='my-1'>
         Already have an account? <a href='login.html'>Sign In</a>
