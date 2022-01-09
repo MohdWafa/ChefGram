@@ -14,6 +14,7 @@ const App = () => (
       <Routes>
         <Route path='/' element={<Landing />} />
       </Routes>
+
       <section className='container'>
         <Routes>
           <Route path='register' element={<Register />} />
