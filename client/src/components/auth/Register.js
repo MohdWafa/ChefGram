@@ -36,7 +36,7 @@ const Register = () => {
         const res = await axios.post('/api/users', body, config);
         console.log(res.data);
       } catch (err) {
-        console.error(err.res.data);
+        console.error(err.response.data);
       }
     }
   };
@@ -47,7 +47,7 @@ const Register = () => {
         <p className='lead'>
           <i className='fas fa-user'></i> Create your account
         </p>
-        <form className='form' onSubmit={(e) => onSubmit()}>
+        <form className='form' onSubmit={(e) => onSubmit(e)}>
           <div className='form-group'>
             <input
               type='text'
