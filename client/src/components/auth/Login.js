@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 
 const Login = () => {
-  return <div>Login</div>;
+  return (
+    <Fragment>
+      <section className='container'>Login</section>
+    </Fragment>
+  );
 };
 
 export default Login;
