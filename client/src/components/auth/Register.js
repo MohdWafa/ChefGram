@@ -24,6 +24,7 @@ const Register = () => {
         email,
         password,
       };
+      // console.log(newUser);
       try {
         const config = {
           headers: {
