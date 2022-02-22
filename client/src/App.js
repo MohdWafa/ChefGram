@@ -9,6 +9,7 @@ import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
 import CreateProfile from './components/profile-forms/CreateProfile';
 import AddExperience from './components/profile-forms/AddExperience';
+import AddEducation from './components/profile-forms/AddEducation';
 import EditProfile from './components/profile-forms/EditProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
 
@@ -56,6 +57,10 @@ const App = () => {
               <Route
                 path='add-experience'
                 element={<PrivateRoute component={AddExperience} />}
+              />
+              <Route
+                path='add-education'
+                element={<PrivateRoute component={AddEducation} />}
               />
             </Routes>
           </section>
