@@ -68,7 +68,9 @@ router.post(
     if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
     if (cuisine) {
-      profileFields.cuisine = cuisine.split(',').map((skill) => skill.trim());
+      profileFields.cuisine = Array.isArray(cuisine)
+        ? cuisine
+        : cuisine.split(',').map((skill) => ' ' + skill.trim());
     }
 
     //Build social object
